@@ -46,9 +46,24 @@ namespace trig
         private void Button1_Click(object sender, EventArgs e)
         {
             double Force = double.Parse(textBox2.Text);
-            double Angle = double.Parse(textBox1.Text);
-            double Fx = Force * cos(Angle);
-            double Fy = Force * sin(Angle);
+
+            try
+            {
+                double Angle = double.Parse(textBox2.Text);
+            }
+            catch
+            {
+                MessageBox.Show(Angle + "has not been inputted correctly");
+                double Angle = 0.0;
+            }
+
+            double angle = double.Parse(textBox1.Text);
+
+
+
+
+            double Fx = Force * cos(angle);
+            double Fy = Force * sin(angle);
 
             label1.Text = "Fx = " + Fx;
             label2.Text = "Fy = " + Fy;
