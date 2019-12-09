@@ -26,7 +26,7 @@ namespace trig
         }
         double cos(double x)
         {
-            return Math.Cos(x * Math.PI / 180.0));
+            return (Math.Cos(x * Math.PI / 180.0));
         }
         double acos(double x)
         {
@@ -45,6 +45,13 @@ namespace trig
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            double Force = double.Parse(textBox2.Text);
+            double Angle = double.Parse(textBox1.Text);
+            double Fx = Force * cos(Angle);
+            double Fy = Force * sin(Angle);
+
+            label1.Text = "Fx = " + Fx;
+            label2.Text = "Fy = " + Fy;
 
         }
 
