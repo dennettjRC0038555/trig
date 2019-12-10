@@ -47,8 +47,8 @@ namespace trig
         {
 
             double Force, Angle;
-            
 
+            //calculates the force
             try
             {
                 Force = double.Parse(textBox2.Text);
@@ -60,7 +60,7 @@ namespace trig
             }
 
             
-
+            //calculates the angle
             try
             {
                 Angle = double.Parse(textBox1.Text);
