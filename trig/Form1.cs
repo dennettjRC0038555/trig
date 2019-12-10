@@ -55,7 +55,7 @@ namespace trig
             }
             catch
             {
-                MessageBox.Show("The force is wrong");
+                MessageBox.Show("The force is inputted wrong");
                 Force = 0.0;
             }
 
@@ -67,7 +67,7 @@ namespace trig
             }
             catch
             {
-                MessageBox.Show("The angle is wrong");
+                MessageBox.Show("The angle is inputted wrong");
                 Angle = 0.0;
             }
 
